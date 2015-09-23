@@ -8,13 +8,40 @@
     <link href="./css/navbar/main.css" rel="stylesheet"/>
     <link href="./css/dropmenu/main.css" rel="stylesheet"/>
     <link href="./css/table/main.css" rel="stylesheet" />
-    <link href="./css/list-group/main.css" rel="steylesheet"/>
+    <link href="./css/articlebox/main.css" rel="stylesheet" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title></title>
 </head>
 <body>
 <div class="sb-wrap">
     <h1><b>S<b>tudy<b>B<b>ee <b>T</b>em<b>p</b>late</h1>
+    <article class="sb-articlebox">
+        <h3>Studybee Template</h3>
+        <p>
+            이 페이지는 studybee "서비스 만들기" 클래스에서 사용할 공통 위젯을 올려놓는 페이지 입니다. <br/>
+        </p>
+        <p>
+            <ul>
+                <li>
+                    1. 공통 Class는 "sb-" 를 prefix로 합니다.
+                </li>
+                <li>
+                    2. prefix 뒤의 클래스 이름은 <code>/css/클래스명/main.css</code> 로 생성 후 작성합니다.
+                </li>
+                <li>
+                    3. 공통 class가 아닌 해당 페이지를 위한 css는 <code>/assets/css/main.css</code> 에 작성합니다.
+                </li>
+            </ul>
+        </p>
+        <p>
+            Github :
+            <a href="https://github.com/studybee/SBTP" target="_blank"/>
+                https://github.com/studybee/SBTP
+            </a>
+        </p>
+    </article>
+    <h2>Navigation bar</h2>
     <ul class="sb-navbar">
         <li>Navigation bar</li>
         <li class="active">Table</li>
@@ -32,7 +59,7 @@
         <li>sample4<i class="fa fa-plus"></i></li>
         <li>sample5<i class="fa fa-plus"></i></li>
     </ul>
-
+    <h2>Table</h2>
     <table class="sb-table">
         <thead>
         <th>test</th>
