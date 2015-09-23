@@ -1,0 +1,14 @@
+.sb-table{
+    border: 1px solid #bcbcbc;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.sb-table thead{
+    border-bottom: 1px solid red;
+}
+.sb-table tbody tr td{
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
