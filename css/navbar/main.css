@@ -1,3 +1,29 @@
-.sb-navbar {
+.sb-navbar li{
     float: left;
+    padding: 0.5em;
+    line-height: 25px;
+    height: 20px;
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 8px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.sb-navbar li.active {
+    background: rgb(180, 180, 180);
+}
+
+.sb-navbar li:last-child {
+    margin-right: 0px;
+}
+
+.sb-navbar li:hover {
+    background: rgb(230, 230, 230);
+}
+
+.sb-navbar:after {
+    content: '';
+    zoom: 1;
+    display: block;
+    clear: both;
 }
