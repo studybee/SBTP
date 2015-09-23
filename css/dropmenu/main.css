@@ -1,0 +1,39 @@
+.sb-dropmenu {
+    color: #337ab7;
+    width: 200px;
+    border-radius: 10px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.sb-dropmenu > li {
+    height: 40px;
+    line-height: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color:  rgb(130, 130, 130);
+    position: relative;
+}
+
+.sb-dropmenu > li:last-child {
+    border-width: 1px 1px 1px 1px;
+}
+
+.sb-dropmenu > li:hover {
+    background-color: #4169e1;
+    color: #fff
+}
+
+.sb-dropmenu > li > div {
+    width: 80%;
+    display: inline-block;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.sb-dropmenu > li > i {
+    position: absolute;
+    right: 5px;
+}

@@ -2,6 +2,7 @@
     border: 1px solid #bcbcbc;
     border-spacing: 0;
     border-collapse: collapse;
+    /*width: 100%;*/
 }
 .sb-table thead{
     border-bottom: 1px solid red;
