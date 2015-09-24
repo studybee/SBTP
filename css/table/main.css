@@ -13,3 +13,32 @@
     vertical-align: top;
     border-top: 1px solid #ddd;
 }
+
+/*박지혜 추가*/
+.sb-tablebox{
+    width: 60%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+}
+.sb-table02{
+    width: 100%;
+    margin: 10px;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+.sb-table02>thead>tr>th {
+    padding: 8px;
+    vertical-align: top;
+    border-bottom: 2px solid #dddddd;
+    text-align: left;
+    font-weight: bold;
+}
+
+.sb-table02>tbody>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-bottom: 1px solid #dddddd;
+}
