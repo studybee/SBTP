@@ -1,3 +1,13 @@
+header {
+    background: #4c4c4c;
+    color: #fff;
+}
+
+#lnb {
+    position: fixed;
+    width:16%;
+}
+
 .sb-articlebox li {
     height: 25px;
     line-height: 25px;

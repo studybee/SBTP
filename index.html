@@ -5,6 +5,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="./css/common.css" rel="stylesheet"/>
     <link href="./css/wrap/main.css" rel="stylesheet"/>
+    <link href="./css/grid/main.css" rel="stylesheet"/>
     <link href="./css/navbar/main.css" rel="stylesheet"/>
     <link href="./css/dropmenu/main.css" rel="stylesheet"/>
     <link href="./css/table/main.css" rel="stylesheet" />
@@ -16,168 +17,207 @@
 </head>
 <body>
 <div class="sb-wrap">
-    <h1><b>S<b>tudy<b>B<b>ee <b>T</b>em<b>p</b>late</h1>
-    <article class="sb-articlebox">
-        <h3>Studybee Template</h3>
-        <p>
-            이 페이지는 studybee "서비스 만들기" 클래스에서 사용할 공통 위젯을 올려놓는 페이지 입니다. <br/>
-        </p>
-        <p>
-            <ul>
-                <li>
-                    1. 공통 Class는 "sb-" 를 prefix로 합니다.
-                </li>
-                <li>
-                    2. prefix 뒤의 클래스 이름은 <code>/css/클래스명/main.css</code> 로 생성 후 작성합니다.
-                </li>
-                <li>
-                    3. 공통 class가 아닌 해당 페이지를 위한 css는 <code>/assets/css/main.css</code> 에 작성합니다.
-                </li>
-            </ul>
-        </p>
-        <p>
-            Github :
-            <a href="https://github.com/studybee/SBTP" target="_blank"/>
-                https://github.com/studybee/SBTP
-            </a>
-        </p>
-    </article>
-    <h2>Navigation bar</h2>
-    <ul class="sb-navbar">
-        <li>Navigation bar</li>
-        <li class="active">Table</li>
-        <li>Drop menu</li>
-        <li>Select bar</li>
-        <li>Layer popup</li>
-        <li>Contribution</li>
-    </ul>
-    <h2>Drop menu</h2>
-    <article>이것은 드롭메뉴 입니다. 사용법은 UL 태그에 sb-dropmenu 클래스를 추가합니다.</article>
-    <ul class="sb-dropmenu">
-        <li><div>sample1dsklfjksdjfkldsjkl;fsjadl;kfj;lsadkjf;lksadj</div><i class="fa fa-plus"></i></li>
-        <li>sample2<i class="fa fa-plus"></i></li>
-        <li>sample3<i class="fa fa-plus"></i></li>
-        <li>sample4<i class="fa fa-plus"></i></li>
-        <li>sample5<i class="fa fa-plus"></i></li>
-    </ul>
-    <h2>Table</h2>
-    <table class="sb-table">
-        <thead>
-        <th>test</th>
-        </thead>
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-        </tr>
-        <tr>
-            <td>가</td>
-            <td>나</td>
-            <td>다</td>
-            <td>라</td>
-        </tr>
-        </tbody>
-    </table>
+    <header>
+        <div class="sb-grid">
+            <h1><b>S<b>tudy<b>B<b>ee <b>T</b>em<b>p</b>late</h1>
+        </div>
+    </header>
+    <div class="sb-grid">
+        <div class="sb-col2">
+            <div class="sb-grid">
+                <ul class="sb-dropmenu" id="lnb">
+                    <li>
+                        Navigation bar
+                    </li>
+                    <li>
+                        Drop menu
+                    </li>
+                    <li>
+                        Table
+                    </li>
+                    <li>
+                        Button
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sb-col10">
+            <div class="sb-grid">
+                <div class="sb-col12">
+                    <article class="sb-articlebox">
+                        <h3>Studybee Template</h3>
 
-    <div class="sb-tablebox">
-        <h3>Table sample 2</h3>
-        <table class="sb-table02">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Contents</th>
-                    <th>Remarks</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>Sam</td>
-                <td>08:57</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Lucy</td>
-                <td>14:50</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Ria</td>
-                <td>20:30</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Din</td>
-                <td>23:40</td>
-                <td>-</td>
-            </tr>
-            </tbody>
-        </table>
+                        <p>
+                            이 페이지는 studybee "서비스 만들기" 클래스에서 사용할 공통 위젯을 올려놓는 페이지 입니다. <br/>
+                        </p>
+                        <p>
+                            <ul>
+                                <li>
+                                    1. 공통 Class는 "sb-" 를 prefix로 합니다.
+                                </li>
+                                <li>
+                                    2. prefix 뒤의 클래스 이름은 <code>/css/클래스명/main.css</code> 로 생성 후 작성합니다.
+                                </li>
+                                <li>
+                                    3. 공통 class가 아닌 해당 페이지를 위한 css는 <code>/assets/css/main.css</code> 에 작성합니다.
+                                </li>
+                            </ul>
+                        </p>
+                        <p>
+                            Github :
+                            <a href="https://github.com/studybee/SBTP" target="_blank"/>
+                                https://github.com/studybee/SBTP
+                            </a>
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="sb-grid">
+                <h2>Navigation bar</h2>
+                <ul class="sb-navbar">
+                    <li>Navigation bar</li>
+                    <li class="active">Table</li>
+                    <li>Drop menu</li>
+                    <li>Select bar</li>
+                    <li>Layer popup</li>
+                    <li>Contribution</li>
+                </ul>
+            </div>
+            <div class="sb-grid">
+                <h2>Drop menu</h2>
+                <article>이것은 드롭메뉴 입니다. 사용법은 UL 태그에 sb-dropmenu 클래스를 추가합니다.</article>
+                <ul class="sb-dropmenu">
+                    <li><div>sample1dsklfjksdjfkldsjkl;fsjadl;kfj;lsadkjf;lksadj</div><i class="fa fa-plus"></i></li>
+                    <li>sample2<i class="fa fa-plus"></i></li>
+                    <li>sample3<i class="fa fa-plus"></i></li>
+                    <li>sample4<i class="fa fa-plus"></i></li>
+                    <li>sample5<i class="fa fa-plus"></i></li>
+                </ul>
+            </div>
+            <div class="sb-grid">
+                <h2>Table</h2>
+                <table class="sb-table">
+                    <thead>
+                    <th>test</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>b</td>
+                        <td>c</td>
+                        <td>d</td>
+                    </tr>
+                    <tr>
+                        <td>가</td>
+                        <td>나</td>
+                        <td>다</td>
+                        <td>라</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sb-grid">
+                <h3>Table sample 2</h3>
+                <table class="sb-table02">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Contents</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Sam</td>
+                        <td>08:57</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Lucy</td>
+                        <td>14:50</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ria</td>
+                        <td>20:30</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Din</td>
+                        <td>23:40</td>
+                        <td>-</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="sb-grid">
+                <h2>Button</h2>
+                <h3>extra big size</h3>
+                <div>
+                    <button type="button" class="sb-btn sb-btn-xb sb-btn-white">white</button>
+                    <button type="button" class="sb-btn sb-btn-xb sb-btn-white" disabled>white disabled</button>
+                    <button type="button" class="sb-btn sb-btn-xb sb-btn-red">red</button>
+                    <button type="button" class="sb-btn sb-btn-xb sb-btn-green">green</button>
+                    <button type="button" class="sb-btn sb-btn-xb sb-btn-blue">blue</button>
+                    <button type="button" class="sb-btn sb-btn-xb sb-btn-black">Black</button>
+                    <button type="button" class="sb-btn sb-btn-xb sb-btn-black" disabled>Black disabled</button>
+                </div>
+                <h3>big size</h3>
+                <div>
+                    <button type="button" class="sb-btn sb-btn-b sb-btn-white">white</button>
+                    <button type="button" class="sb-btn sb-btn-b sb-btn-white" disabled>white disabled</button>
+                    <button type="button" class="sb-btn sb-btn-b sb-btn-red">red</button>
+                    <button type="button" class="sb-btn sb-btn-b sb-btn-green">green</button>
+                    <button type="button" class="sb-btn sb-btn-b sb-btn-blue">blue</button>
+                    <button type="button" class="sb-btn sb-btn-b sb-btn-black">Black</button>
+                    <button type="button" class="sb-btn sb-btn-b sb-btn-black" disabled>Black disabled</button>
+                </div>
+                <h3>normal size</h3>
+                <div>
+                    <button type="button" class="sb-btn sb-btn-nm sb-btn-white">white</button>
+                    <button type="button" class="sb-btn sb-btn-nm sb-btn-white" disabled>white disabled</button>
+                    <button type="button" class="sb-btn sb-btn-nm sb-btn-red">red</button>
+                    <button type="button" class="sb-btn sb-btn-nm sb-btn-green">green</button>
+                    <button type="button" class="sb-btn sb-btn-nm sb-btn-blue">blue</button>
+                    <button type="button" class="sb-btn sb-btn-nm sb-btn-black">Black</button>
+                    <button type="button" class="sb-btn sb-btn-nm sb-btn-black" disabled>Black disabled</button>
+                </div>
+                <h3>small size</h3>
+                <div>
+                    <button type="button" class="sb-btn sb-btn-s sb-btn-white">white</button>
+                    <button type="button" class="sb-btn sb-btn-s sb-btn-white" disabled>white disabled</button>
+                    <button type="button" class="sb-btn sb-btn-s sb-btn-red">red</button>
+                    <button type="button" class="sb-btn sb-btn-s sb-btn-green">green</button>
+                    <button type="button" class="sb-btn sb-btn-s sb-btn-blue">blue</button>
+                    <button type="button" class="sb-btn sb-btn-s sb-btn-black">Black</button>
+                    <button type="button" class="sb-btn sb-btn-s sb-btn-black" disabled>Black disabled</button>
+                </div>
+                <h3>extra small size</h3>
+                <div>
+                    <button type="button" class="sb-btn sb-btn-xs sb-btn-white">white</button>
+                    <button type="button" class="sb-btn sb-btn-xs sb-btn-white" disabled>white disabled</button>
+                    <button type="button" class="sb-btn sb-btn-xs sb-btn-red">red</button>
+                    <button type="button" class="sb-btn sb-btn-xs sb-btn-green">green</button>
+                    <button type="button" class="sb-btn sb-btn-xs sb-btn-blue">blue</button>
+                    <button type="button" class="sb-btn sb-btn-xs sb-btn-black">Black</button>
+                    <button type="button" class="sb-btn sb-btn-xs sb-btn-black" disabled>Black disabled</button>
+                </div>
+            </div>
+        </div>
     </div>
-        <h2>Button</h2>
-    <h3>extra big size</h3>
-    <div class="sb-mg20">
-        <button type="button" class="sb-btn sb-btn-xb sb-btn-white">white</button>
-        <button type="button" class="sb-btn sb-btn-xb sb-btn-white" disabled>white disabled</button>
-        <button type="button" class="sb-btn sb-btn-xb sb-btn-red">red</button>
-        <button type="button" class="sb-btn sb-btn-xb sb-btn-green">green</button>
-        <button type="button" class="sb-btn sb-btn-xb sb-btn-blue">blue</button>
-        <button type="button" class="sb-btn sb-btn-xb sb-btn-black">Black</button>
-        <button type="button" class="sb-btn sb-btn-xb sb-btn-black" disabled>Black disabled</button>
-    </div>
-    <h3>big size</h3>
-    <div class="sb-mg20">
-        <button type="button" class="sb-btn sb-btn-b sb-btn-white">white</button>
-        <button type="button" class="sb-btn sb-btn-b sb-btn-white" disabled>white disabled</button>
-        <button type="button" class="sb-btn sb-btn-b sb-btn-red">red</button>
-        <button type="button" class="sb-btn sb-btn-b sb-btn-green">green</button>
-        <button type="button" class="sb-btn sb-btn-b sb-btn-blue">blue</button>
-        <button type="button" class="sb-btn sb-btn-b sb-btn-black">Black</button>
-        <button type="button" class="sb-btn sb-btn-b sb-btn-black" disabled>Black disabled</button>
-    </div>
-    <h3>normal size</h3>
-    <div class="sb-mg20">
-        <button type="button" class="sb-btn sb-btn-nm sb-btn-white">white</button>
-        <button type="button" class="sb-btn sb-btn-nm sb-btn-white" disabled>white disabled</button>
-        <button type="button" class="sb-btn sb-btn-nm sb-btn-red">red</button>
-        <button type="button" class="sb-btn sb-btn-nm sb-btn-green">green</button>
-        <button type="button" class="sb-btn sb-btn-nm sb-btn-blue">blue</button>
-        <button type="button" class="sb-btn sb-btn-nm sb-btn-black">Black</button>
-        <button type="button" class="sb-btn sb-btn-nm sb-btn-black" disabled>Black disabled</button>
-    </div>
-    <h3>small size</h3>
-    <div class="sb-mg20">
-        <button type="button" class="sb-btn sb-btn-s sb-btn-white">white</button>
-        <button type="button" class="sb-btn sb-btn-s sb-btn-white" disabled>white disabled</button>
-        <button type="button" class="sb-btn sb-btn-s sb-btn-red">red</button>
-        <button type="button" class="sb-btn sb-btn-s sb-btn-green">green</button>
-        <button type="button" class="sb-btn sb-btn-s sb-btn-blue">blue</button>
-        <button type="button" class="sb-btn sb-btn-s sb-btn-black">Black</button>
-        <button type="button" class="sb-btn sb-btn-s sb-btn-black" disabled>Black disabled</button>
-    </div>
-    <h3>extra small size</h3>
-    <div class="sb-mg20">
-        <button type="button" class="sb-btn sb-btn-xs sb-btn-white">white</button>
-        <button type="button" class="sb-btn sb-btn-xs sb-btn-white" disabled>white disabled</button>
-        <button type="button" class="sb-btn sb-btn-xs sb-btn-red">red</button>
-        <button type="button" class="sb-btn sb-btn-xs sb-btn-green">green</button>
-        <button type="button" class="sb-btn sb-btn-xs sb-btn-blue">blue</button>
-        <button type="button" class="sb-btn sb-btn-xs sb-btn-black">Black</button>
-        <button type="button" class="sb-btn sb-btn-xs sb-btn-black" disabled>Black disabled</button>
-    </div>
-</di>
+</div>
 </body>
 </html>
 
