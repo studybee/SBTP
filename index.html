@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="./css/common.css" rel="stylesheet"/>
     <link href="./css/wrap/main.css" rel="stylesheet"/>
     <link href="./css/grid/main.css" rel="stylesheet"/>
@@ -13,7 +13,7 @@
     <link href="./css/button/main.css" rel="stylesheet" />
     <link href="./css/articlebox/main.css" rel="stylesheet" />
     <link href="./assets/css/main.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <title></title>
 </head>
@@ -76,23 +76,26 @@
             </div>
             <div class="sb-grid">
                 <h2>Navigation bar</h2>
-                <ul class="sb-navbar">
-                    <li>Navigation bar</li>
-                    <li class="active">Table</li>
-                    <li>Drop menu</li>
-                    <li>Select bar</li>
-                    <li>Layer popup</li>
-                    <li>Contribution</li>
-                </ul>
+                <div class="sb-col12">
+                    <h2>Navigation bar</h2>
+                    <ul class="sb-navbar">
+                        <li>Navigation bar</li>
+                        <li class="active">Table</li>
+                        <li>Drop menu</li>
+                        <li>Select bar</li>
+                        <li>Layer popup</li>
+                        <li>Contribution</li>
+                    </ul>
 
-                <ul class="sb-navbar sb-navbar-simple">
-                    <li>Navigation bar</li>
-                    <li class="active">Table</li>
-                    <li>Drop menu</li>
-                    <li>Select bar</li>
-                    <li>Layer popup</li>
-                    <li>Contribution</li>
-                </ul>
+                    <ul class="sb-navbar-yh">
+                        <li><a>Navigation bar</a></li>
+                        <li><a>Table</a></li>
+                        <li><a>Drop menu</a></li>
+                        <li><a>Select bar</a></li>
+                        <li><a>Layer popup</a></li>
+                        <li><a>Contribution</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="sb-grid">
                 <div class="sb-col3">
@@ -110,7 +113,14 @@
                     <h2>Drop menu 1</h2>
                     <article>이것은 드롭메뉴 입니다. 사용법은 UL 태그에 sb-dropmenu 클래스를 추가합니다.</article>
                     <ul class="sb-dropmenu sb-dropmenu-dark">
-                        <li><div>sample1</div><i class="fa fa-plus"></i></li>
+                        <li class="sb-has-sub">
+                            <div>sample1</div><i class="fa fa-plus"></i>
+                            <ul>
+                               <li><div>sub1</div></li>
+                               <li><div>sub2</div></li>
+                               <li><div>sub3</div></li> 
+                            </ul>
+                        </li>
                         <li>sample2<i class="fa fa-plus"></i></li>
                         <li>sample3<i class="fa fa-plus"></i></li>
                         <li>sample4<i class="fa fa-plus"></i></li>
