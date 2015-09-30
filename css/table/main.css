@@ -22,24 +22,28 @@
 }
 
 /* 홀수 선택자 */
-.sb-table.sb-table-template3 > tbody > tr:nth-child(odd){
-    background-color: #eee;
+.sb-table.sb-table-template3 > tbody > tr:nth-child(even){
+    background-color: #fffff5;
 }
 
 .sb-table.sb-table-template3 > thead > tr > th {
     padding: 8px;
     vertical-align:top;
-    border-bottom: 1px solid #000;
-    color: #fff;
+    border-bottom : 2px solid #333;
+    border-top : 2px solid #333;
     font-weight:bold;
-    background-color: #000;
+    background-color: #fffff5;
 }
 
 .sb-table.sb-table-template3 > tbody > tr > td {
     padding: 8px;
     line-height: 1.42857143;
     vertical-align: top;
-    border-bottom : 1px solid #000;
+    border-bottom : 1px solid #333;
 }
 
+.sb-table.sb-table-template3 > tbody > tr:hover {
+    background-color: #ddd;
+
+}
 
