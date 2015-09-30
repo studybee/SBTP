@@ -1,55 +1,45 @@
 .sb-table{
-    border: 1px solid #bcbcbc;
-    border-spacing: 0;
-    border-collapse: collapse;
-    /*width: 100%;*/
-}
-.sb-table thead{
-    border-bottom: 1px solid red;
-}
-.sb-table tbody tr td{
-    padding: 8px;
-    line-height: 1.42857143;
-    vertical-align: top;
-    border-top: 1px solid #ddd;
-}
-
-/*박지혜 추가*/
-.sb-table02 {
     width: 100%;
     margin: 10px;
     border-collapse: collapse;
     border-spacing: 0;
 
 }
-.sb-table02 > thead > tr > th {
+.sb-table > thead > tr > th {
     padding: 8px;
     vertical-align: top;
-    border-bottom: 2px solid #dddddd;
+    border-bottom: 2px solid #ddd;
     text-align: left;
     font-weight: bold;
 }
 
-.sb-table02 > tbody > tr > td {
+.sb-table > tbody > tr > td {
     padding: 8px;
     line-height: 1.42857143;
     vertical-align: top;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #ddd;
 
 }
 
-.sb-table02.sb-table-template3 > thead > tr > th {
+/* 홀수 선택자 */
+.sb-table.sb-table-template3 > tbody > tr:nth-child(odd){
+    background-color: #eee;
+}
+
+.sb-table.sb-table-template3 > thead > tr > th {
     padding: 8px;
     vertical-align:top;
-    border-bottom: 1px solid #000000;
-    color: #ffffff;
+    border-bottom: 1px solid #000;
+    color: #fff;
     font-weight:bold;
-    background-color: #000000;
+    background-color: #000;
 }
 
-.sb-table02.sb-table-template3 > tbody > tr > td {
+.sb-table.sb-table-template3 > tbody > tr > td {
     padding: 8px;
     line-height: 1.42857143;
     vertical-align: top;
-    border-bottom : 1px solid #000000;
+    border-bottom : 1px solid #000;
 }
+
+
