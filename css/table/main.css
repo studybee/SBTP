@@ -35,4 +35,21 @@
     line-height: 1.42857143;
     vertical-align: top;
     border-bottom: 1px solid #dddddd;
+
+}
+
+.sb-table02.sb-table-template3 > thead > tr > th {
+    padding: 8px;
+    vertical-align:top;
+    border-bottom: 1px solid #000000;
+    color: #ffffff;
+    font-weight:bold;
+    background-color: #000000;
+}
+
+.sb-table02.sb-table-template3 > tbody > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-bottom : 1px solid #000000;
 }

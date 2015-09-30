@@ -1,6 +1,6 @@
 .sb-dropmenu {
     color: #337ab7;
-    width: 100%;
+    width: 40%;
     border-radius: 10px;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
@@ -36,4 +36,19 @@
 .sb-dropmenu > li > i {
     position: absolute;
     right: 5px;
+}
+
+.sb-dropmenu.sb-dropmenu-dark > li {
+
+    color: #ffffff;
+  box-shadow: inset 0 0 3px #000000;
+  -moz-box-shadow: inset 0 0 3px #000000;
+  -webkit-box-shadow: inset 0 0 3px #000000;
+  background: #070707;
+  background: -moz-linear-gradient(top, #262626 0%, #070707 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #262626), color-stop(100%, #070707));
+  background: -webkit-linear-gradient(top, #262626 0%, #070707 100%);
+  background: -o-linear-gradient(top, #262626 0%, #070707 100%);
+  background: -ms-linear-gradient(top, #262626 0%, #070707 100%);
+  background: linear-gradient(to bottom, #262626 0%, #070707 100%);
 }
