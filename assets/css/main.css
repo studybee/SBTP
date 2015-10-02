@@ -12,3 +12,18 @@ header {
     height: 25px;
     line-height: 25px;
 }
+
+.contribution-profile  div {
+    text-align: center;
+}
+.contribution-profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.contribution-profile .nick {
+    font-weight: 600;
+    text-align: center;
+    margin: 1em;
+}

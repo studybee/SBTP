@@ -29,32 +29,36 @@
 }
 
 ul.sb-navbar-yh {
-    min-width: 700px;
     margin: 20px;
 
 }
 
 ul.sb-navbar-yh li {
     float: left;
-    padding: 0.5em;
     line-height: 25px;
-    height: 20px;
+    height: 25px;
     border-radius: 8px;
-    margin-right: 15px;
     cursor: pointer;
+    margin-right: 0;
 
+}
+
+ul.sb-navbar-yh li:after {
+    content: '|';
+}
+
+ul.sb-navbar-yh li:last-child:after {
+    content: '';
 }
 
 ul.sb-navbar-yh li a {
     text-decoration: none;
-    padding: 15px 0;
-    background-color: white;
     color: black;
     float: left;
     text-align: center;
     background-color: #4285f4;
-    border-radius: 15px;
-
+    padding: 0.5em;
+    border-radius: 0px;
 }
 
 ul.sb-navbar-yh li a:hover {

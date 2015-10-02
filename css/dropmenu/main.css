@@ -63,6 +63,7 @@
     background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
 }
+
 .sb-dropmenu li.sb-has-sub > ul:after {
     position:absolute;
     content:'';
