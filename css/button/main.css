@@ -18,7 +18,7 @@
 
 	text-decoration:none !important
 }
-.sb-btn:active {
+.sb-btn:hover {
 	-webkit-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);
 	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5)
 }
@@ -65,7 +65,7 @@
 	color:#fff;
 	text-shadow: -1px -1px 1px #fa1b1b
 }
-.sb-btn-red:active {
+.sb-btn-red:hover {
 	background-color:#fa1b1b
 }
 
@@ -75,7 +75,7 @@
 	color:#fff;
 	text-shadow: -1px -1px 1px #00bc61
 }
-.sb-btn-green:active {
+.sb-btn-green:hover {
 	background-color:#00bc61
 }
 
@@ -85,7 +85,7 @@
 	color:#fff;
 	text-shadow: -1px -1px 1px #2373f7
 }
-.sb-btn-blue:active {
+.sb-btn-blue:hover {
 	background-color:#2373f7
 }
 
@@ -95,7 +95,7 @@
 	color:#fff;
 	text-shadow: -1px -1px 1px #393939
 }
-.sb-btn-black:active {
+.sb-btn-black:hover {
 	background-color:#393939
 }
 /* E:Color */
