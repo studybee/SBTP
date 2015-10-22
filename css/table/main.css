@@ -46,3 +46,25 @@
     background-color: #ddd;
 }
 
+.sb-table th i {
+    display:inline-block;
+    box-sizing:border-box;
+    margin-left:5px;
+    width:5px;
+    height:5px;
+    border:5px solid transparent
+}
+
+.sb-table th i.upArrow {
+    border:5px solid #fb5252;
+    border-top:none;
+    border-left-color:transparent;
+    border-right-color:transparent;
+}
+
+.sb-table th i.downArrow {
+    border:5px solid #4285f4;
+    border-bottom:none;
+    border-left-color:transparent;
+    border-right-color:transparent;
+}
