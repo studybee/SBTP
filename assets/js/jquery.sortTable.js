@@ -27,6 +27,15 @@
         var iconArr = [];
 
         function init() {		//초기화
+            //정렬 클릭시 블럭 생기는거 방지
+            el.css({
+                '-ms-user-select': 'none',
+                '-moz-user-select': '-moz-none',
+                '-khtml-user-select': 'none',
+                '-webkit-user-select': 'none',
+                'user-select': 'none'
+            });
+            
             setData();			// 데이터 가져오기(td로부터)
             setField();         // 필드 셋팅
             initEvent();		// 이벤트 생성
@@ -65,6 +74,7 @@
                     });
                 }
 
+                dom.sortAbleField.data('sort', 'default');
                 $(this).data('sort', destSort);
                 switchIcon(idx, destSort);
                 setSortResult(tmpArr);
