@@ -142,3 +142,9 @@
 		*/
 	};
 })(jQuery);
+
+$(function(){
+    $(".sb-table-sort").each(function() {
+        $(this).sortTable();
+    })
+});
