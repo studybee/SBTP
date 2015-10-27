@@ -6,20 +6,20 @@
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href="./css/common.css" rel="stylesheet"/>
-    <link href="./css/wrap/main.css" rel="stylesheet"/>
-    <link href="./css/grid/main.css" rel="stylesheet"/>
-    <link href="./css/navbar/main.css" rel="stylesheet"/>
-    <link href="./css/dropmenu/main.css" rel="stylesheet"/>
-    <link href="./css/dropmenu/simple.css" rel="stylesheet"/>
-    <link href="./css/table/main.css" rel="stylesheet" />
-    <link href="./css/button/main.css" rel="stylesheet" />
-    <link href="./css/articlebox/main.css" rel="stylesheet" />
+    <link href="features/common.css" rel="stylesheet"/>
+    <link href="features/wrap/main.css" rel="stylesheet"/>
+    <link href="features/grid/main.css" rel="stylesheet"/>
+    <link href="features/navbar/main.css" rel="stylesheet"/>
+    <link href="features/dropmenu/main.css" rel="stylesheet"/>
+    <!--<link href="features/dropmenu/simple.css" rel="stylesheet"/>-->
+    <link href="features/table/main.css" rel="stylesheet" />
+    <link href="features/button/main.css" rel="stylesheet" />
+    <link href="features/articlebox/main.css" rel="stylesheet" />
     <link href="./assets/css/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="assets/js/jquery.sortTable.js"></script>
+    <script src="features/table/js/sortTable.js"></script>
 </head>
 <body>
 <div class="sb-wrap">
@@ -134,7 +134,7 @@
             </div>
             <div class="sb-grid">
                 <h3>Table sample 2</h3>
-                <table class="sb-table sb-table-sort">
+                <table class="sb-table sb-table-custom">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -142,6 +142,87 @@
                             <th>Contents</th>
                             <th data-sort="false">Remarks</th>
                         </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>11</td>
+                        <td>Sam</td>
+                        <td>08:57</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Lucy</td>
+                        <td>14:50</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ria</td>
+                        <td>20:30</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Din</td>
+                        <td>23:40</td>
+                        <td>-</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sb-grid">
+                <h3>Table Sample3</h3>
+                <table class="sb-table sb-table-template3 sb-table-custom">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th >Name</th>
+                        <th>Contents</th>
+                        <th>Remark</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>D</td>
+                        <td>E</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>G</td>
+                        <td>H</td>
+                        <td>I</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>J</td>
+                        <td>K</td>
+                        <td>L</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+            <div class="sb-grid">
+                <h3>Table sample 2</h3>
+                <table class="sb-table sb-table-sort">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Contents</th>
+                        <th data-sort="false">Remarks</th>
+                    </tr>
                     </thead>
                     <tbody>
                     <tr>
@@ -212,7 +293,6 @@
 
                 </table>
             </div>
-
             <div class="sb-grid">
                 <h2>Progress bar</h2>
                 <div>
@@ -316,3 +396,8 @@
 </div>
 </body>
 </html>
+<script>
+    var table = $('.sb-table-custom').sortTable();
+    //for example
+    table[0].action();
+</script>
