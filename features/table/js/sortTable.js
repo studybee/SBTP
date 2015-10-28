@@ -49,12 +49,15 @@ var SortTable = function (tableElement, opt, callback) {
 
     function init() {		//초기화
         //정렬 클릭시 블럭 생기는거 방지
-        self.container.css({
+        
+        dom.sortAbleField.css({
+            'cursor': 'pointer',
             '-ms-user-select': 'none',
             '-moz-user-select': '-moz-none',
             '-khtml-user-select': 'none',
             '-webkit-user-select': 'none',
-            'user-select': 'none'
+            'user-select': 'none',
+            'vertical-align': 'middle'
         });
 
         setData();			// 데이터 가져오기(td로부터)
