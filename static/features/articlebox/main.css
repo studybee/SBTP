@@ -1,0 +1,16 @@
+.sb-articlebox {
+    border: 1px solid rgb(180, 180, 180);
+    border-left-width: 5px;
+    border-left-color: rgb(180, 180, 180);
+    border-radius: 0.2em;
+    padding: 10px;
+}
+
+.sb-articlebox > h3{
+    color: rgb(180, 180, 180);
+}
+
+.sb-articlebox > p {
+    padding-top: 15px;
+}
+ 
