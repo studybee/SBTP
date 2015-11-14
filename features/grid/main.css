@@ -1,0 +1,63 @@
+.sb-grid{
+    width: 100%;
+    position: relative;
+    padding: 1em 2%;
+    box-sizing: border-box;
+
+}
+
+
+.sb-grid > .sb-col1,
+.sb-grid > .sb-col2,
+.sb-grid > .sb-col3,
+.sb-grid > .sb-col4,
+.sb-grid > .sb-col5,
+.sb-grid > .sb-col6,
+.sb-grid > .sb-col7,
+.sb-grid > .sb-col8,
+.sb-grid > .sb-col9,
+.sb-grid > .sb-col10,
+.sb-grid > .sb-col11,
+.sb-grid > .sb-col12 {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sb-grid > .sb-col1 {
+    width: 8%;
+}
+.sb-grid > .sb-col2 {
+    width: 16%;
+}
+.sb-grid > .sb-col3 {
+    width: 24%;
+}
+.sb-grid > .sb-col4 {
+    width: 32%;
+}
+.sb-grid > .sb-col5 {
+    width: 40%;
+}
+.sb-grid > .sb-col6 {
+    width: 48%;
+}
+.sb-grid > .sb-col7 {
+    width: 56%;
+}
+.sb-grid > .sb-col8 {
+    width: 64%;
+}
+.sb-grid > .sb-col9 {
+    width: 72%;
+}
+.sb-grid > .sb-col10 {
+    width: 80%;
+}
+.sb-grid > .sb-col11 {
+    width: 88%;
+}
+.sb-grid > .sb-col12 {
+    width: 96%;
+}
